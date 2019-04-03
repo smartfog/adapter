@@ -13,7 +13,7 @@ Just do:
 
 > execute `docker-compose up` in the **virtual-device** folder.
 
-For a more complete guide or access to the source code of this project the [next link](https://gitlab.hopu.eu/hardware/ProcessingNode/FogFlow/Py-IoTAgent-Adapter) is provided.
+For a more complete guide or access to the source code of this project the [next link](https://gitlab.hopu.eu/public-projects/FogFlow/Py-IoTAgent-Adapter) is provided.
 
 ## Support
 
@@ -24,7 +24,7 @@ For a more complete guide or access to the source code of this project the [next
 
 >german@hopu.eu
 
-To any technical issue, write your incidence in our issue tracker that you can find in the following link: [click me!](https://gitlab.hopu.eu/hardware/ProcessingNode/FogFlow/Py-IoTAgent-Adapter/issues)
+To any technical issue, write your incidence in our issue tracker that you can find in the following link: [click me!](https://gitlab.hopu.eu/public-projects/Py-IoTAgent-Adapter/issues)
 
 ## License & Terms and Conditions
 Copyright 2019 Hop Ubiquitous
