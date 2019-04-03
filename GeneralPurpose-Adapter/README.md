@@ -13,7 +13,7 @@ Just do:
 
 > execute `docker-compose up` in the **virtual-device** folder.
 
-For a more complete guide or access to the source code of this project the [next link](https://gitlab.hopu.eu/public-projects/FogFlow/Py-IoTAgent-Adapter) is provided.
+For a more complete guide or access to the source code of this project the [next link](https://gitlab.hopu.eu/public-projects/Py-IoTAgent-Adapter) is provided.
 
 ## Support
 
@@ -38,5 +38,5 @@ You may obtain a copy of the License at
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the [LICENSE](https://gitlab.hopu.eu/hardware/ProcessingNode/FogFlow/Py-IoTAgent-Adapter/blob/master/LICENSE) for the specific language governing permissions and
+See the [LICENSE](https://gitlab.hopu.eu/public-projects/Py-IoTAgent-Adapter/blob/master/LICENSE) for the specific language governing permissions and
 limitations under the License.
