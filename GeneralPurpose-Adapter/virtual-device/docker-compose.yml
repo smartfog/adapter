@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  virtual-lwm2m-client:
+    container_name: virtual
+    image: hopu/virtual-lwm2m-device:iotagent-compatible
+    volumes:
+      - "./devices.json:/opt/lwm2m-client/lib/devices.json"

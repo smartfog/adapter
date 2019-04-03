@@ -1,0 +1,31 @@
+[
+    {
+      "name": "HOP-virtual-1",
+      "serverUrl": "coap://192.168.1.48",
+      "serverPort": "5683",
+      "isBootstrap": false,
+      "lifetime": 15,
+      "changeTempInt":60,
+      "device": {
+        "model": "SmartSpot",
+        "batteryLevel": 99,
+        "batteryStatus": 0
+      },     
+      "temperatures": [
+        {
+          "maxValue": 36,
+          "minValue": 32,
+          "sensorValue": 33
+        }
+      ],
+      "humidities": [
+        {
+          "maxValue": 60,
+          "minValue": 30,
+          "sensorValue": 45
+        }
+      ],     
+      "physicalUrl": "http://www.hopu.eu",
+      "crowdMonitoring": true
+    }   
+ ]
