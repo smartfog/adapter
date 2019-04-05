@@ -1,0 +1,60 @@
+version: "3.3"
+
+services:
+  mongodb:
+    image: mongo:3.6
+    networks:
+      - fiwareNetwork
+    volumes:
+      - databases-volume:/data/db
+
+  iotagent:
+    image: hopu/lwm2m-iotagent:observe-and-read
+    ports:
+      - "4041:4041"
+      - "5683:5683/udp"
+    volumes:
+      - "./config.js:/opt/iota-lwm2m/config.js"
+    depends_on:
+      - mongodb
+    networks:
+      - fiwareNetwork
+
+  adapter:
+    image: dievexx/adapter:dev
+    ports:
+      - "1026:1026"
+    environment:
+      - IOT_BROKER_IP=broker
+      - IOT_BROKER_PORT=8080
+    depends_on:
+      - iotagent
+    networks:
+      - fiwareNetwork
+      - fogflow-net
+      
+  broker:
+    image: fogflow/broker:2.0
+    ports:
+      - 8080:8080
+    volumes:
+      - ./broker-config.json:/config.json 
+    networks:
+      - fogflow-net
+
+  worker:
+    image: fogflow/worker:2.0      
+    volumes:
+      - ./broker-config.json:/config.json 
+      - /tmp:/tmp
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - fogflow-net
+         
+volumes:
+  databases-volume:
+      
+networks:
+  fiwareNetwork:
+
+  fogflow-net:
